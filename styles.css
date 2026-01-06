@@ -16,17 +16,19 @@
   --text-muted: #555555;
   --accent: #ffffff;
   --accent-glow: rgba(255, 255, 255, 0.1);
-  
+
   /* Layout */
   --sidebar-width: 320px;
   --navbar-width: 60px;
-  
+  --layout-margin: 24px;
+  --content-width: 80%;
+
   /* Sizing */
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 20px;
   --radius-xl: 24px;
-  
+
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-base: 0.25s ease;
@@ -47,7 +49,9 @@
 }
 
 /* Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -58,12 +62,18 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  padding: var(--layout-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 a {
@@ -82,24 +92,30 @@ img {
 .layout {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
-  height: 100vh;
-  width: 100vw;
+  height: calc(100vh - var(--layout-margin) * 2);
+  width: var(--content-width);
+  max-width: 1600px;
   overflow: hidden;
+  gap: 16px;
+  border-radius: var(--radius-xl);
 }
 
 /* ========================================
-   Sidebar (Fixed Left Panel)
+   Sidebar (Fixed Left Panel - Card Style)
    ======================================== */
 .sidebar {
-  background: var(--bg);
-  border-right: 1px solid var(--surface-border);
-  height: 100vh;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-xl);
+  height: 100%;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-slow), background var(--transition-slow);
+  transition: transform var(--transition-slow),
+    background var(--transition-slow);
   z-index: 100;
+  overflow: hidden;
 }
 
 .sidebar-content {
@@ -127,7 +143,8 @@ img {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--surface-border);
-  transition: transform var(--transition-base), border-color var(--transition-base);
+  transition: transform var(--transition-base),
+    border-color var(--transition-base);
 }
 
 .profile-img:hover {
@@ -203,7 +220,8 @@ img {
   transform: rotate(15deg);
 }
 
-.icon-sun, .icon-moon {
+.icon-sun,
+.icon-moon {
   position: absolute;
   transition: opacity var(--transition-base), transform var(--transition-base);
 }
@@ -246,10 +264,13 @@ img {
 }
 
 /* ========================================
-   Main Content Area (Scrollable)
+   Main Content Area (Scrollable - Card Style)
    ======================================== */
 .main-content {
-  height: 100vh;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-xl);
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -261,13 +282,13 @@ img {
    ======================================== */
 .navbar {
   position: fixed;
-  right: 24px;
+  right: calc(var(--layout-margin) + 8px);
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-xl);
   padding: 12px;
@@ -360,7 +381,7 @@ img {
 .hero-badge {
   display: inline-block;
   padding: 8px 16px;
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-xl);
   font-size: 11px;
@@ -394,7 +415,7 @@ img {
 
 /* Stat Cards */
 .stat-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-lg);
   padding: 24px;
@@ -484,7 +505,7 @@ img {
   left: 0;
   right: 0;
   padding: 16px;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .visual-overlay span {
@@ -505,7 +526,7 @@ img {
 }
 
 .project-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -606,7 +627,7 @@ img {
 }
 
 .experience-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -692,7 +713,7 @@ img {
 }
 
 .tool-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-lg);
   padding: 20px;
@@ -744,7 +765,7 @@ img {
 }
 
 .achievement-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -790,7 +811,7 @@ img {
    Contact Section
    ======================================== */
 .contact-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-xl);
   padding: 48px;
@@ -866,14 +887,14 @@ img {
 .mobile-menu-toggle {
   display: none;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: calc(var(--layout-margin) + 8px);
+  left: calc(var(--layout-margin) + 8px);
   z-index: 200;
   width: 48px;
   height: 48px;
   align-items: center;
   justify-content: center;
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-md);
   color: var(--text);
@@ -890,141 +911,161 @@ img {
    ======================================== */
 @media (max-width: 1200px) {
   :root {
-    --sidebar-width: 280px;
+    --sidebar-width: 230px;
+    --content-width: 85%;
   }
-  
+
   .hero-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 160px);
   }
-  
+
   .hero-grid .stat-card:nth-child(3) {
     grid-column: span 1;
   }
-  
+
   .hero-grid .visual-card:nth-child(4) {
     grid-column: span 2;
   }
-  
+
   .hero-grid .visual-card:nth-child(5) {
     grid-column: span 1;
   }
-  
+
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
+  :root {
+    --layout-margin: 16px;
+    --content-width: 70%;
+  }
+
   .layout {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar {
     position: fixed;
-    left: 0;
-    top: 0;
+    left: var(--layout-margin);
+    top: var(--layout-margin);
+    bottom: var(--layout-margin);
     width: 280px;
-    transform: translateX(-100%);
+    height: auto;
+    transform: translateX(calc(-100% - var(--layout-margin) * 2));
     z-index: 150;
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
-  
+
   .mobile-menu-toggle {
     display: flex;
   }
-  
+
   .navbar {
-    right: 16px;
+    right: calc(var(--layout-margin) + 8px);
     padding: 8px;
   }
-  
+
   .nav-link {
     width: 36px;
     height: 36px;
   }
-  
+
   .nav-link::before {
     display: none;
   }
-  
+
   .section {
     padding: 60px 24px;
     padding-right: 80px;
   }
-  
+
   .hero-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 12px;
   }
-  
+
   .hero-grid .stat-card,
   .hero-grid .visual-card {
     grid-column: span 1;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .project-card.featured {
     grid-column: span 1;
   }
-  
+
   .experience-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .achievements-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
+  :root {
+    --layout-margin: 12px;
+    --content-width: 90%;
+  }
+
+  .sidebar {
+    left: var(--layout-margin);
+    top: var(--layout-margin);
+    bottom: var(--layout-margin);
+    transform: translateX(calc(-100% - var(--layout-margin) * 2));
+  }
+
   .section {
     padding: 48px 20px;
     padding-right: 70px;
     min-height: auto;
   }
-  
+
   .hero {
     min-height: auto;
     padding-top: 80px;
   }
-  
+
   .hero-title {
     font-size: 22px;
   }
-  
+
   .stat-number {
     font-size: 32px;
   }
-  
+
   .experience-grid,
   .achievements-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .contact-card {
     padding: 32px 24px;
   }
-  
+
   .contact-links {
     flex-direction: column;
   }
-  
+
   .btn {
     width: 100%;
   }
-  
+
   .footer {
     padding: 32px 20px;
     padding-right: 70px;
@@ -1035,27 +1076,27 @@ img {
   .hero-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .hero-grid .visual-card {
     height: 160px;
   }
-  
+
   .project-card {
     padding: 20px;
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  
+
   .project-icon {
     width: 48px;
     height: 48px;
     font-size: 22px;
   }
-  
+
   .tools-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .navbar {
     bottom: 16px;
     top: auto;
