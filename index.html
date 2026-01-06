@@ -5,555 +5,552 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="MD Khaled Bin - Software engineer building AI-first interfaces and resilient product systems."
+      content="MD Khaled Bin - Software engineer crafting agentic AI products and resilient product systems."
     />
     <title>MD Khaled Bin | Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body data-theme="light">
-    <header class="site-header" data-animate="fade-down">
-      <div class="wrapper">
-        <div class="brand">
-          <span class="brand-mark">KB</span>
-          <span class="brand-text">MD Khaled Bin</span>
-        </div>
-        <nav class="site-nav" aria-label="Primary">
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <span class="logo-icon">KB</span>
+        </a>
+        <nav class="nav">
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <a href="#skills">Stack</a>
+          <a href="#tools">Tools</a>
           <a href="#contact">Contact</a>
         </nav>
-        <div class="header-cta">
-          <button
-            class="btn ghost theme-toggle"
-            type="button"
-            aria-label="Toggle theme"
-          >
-            <span class="theme-icon" aria-hidden="true">🌙</span>
-            <span class="theme-label">Dark mode</span>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg
+              class="icon-sun"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              ></path>
+            </svg>
+            <svg
+              class="icon-moon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </button>
-          <a
-            class="btn ghost"
-            href="https://github.com/mdkhaledbin"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
-          <a class="btn solid" href="mailto:mdkhaledbin221@gmail.com"
-            >Say hello</a
+          <a href="mailto:mdkhaledbin221@gmail.com" class="btn btn-primary"
+            >Let's Talk</a
           >
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="about" data-animate="fade-up">
-        <div class="hero-orb" aria-hidden="true"></div>
-        <div class="hero-grid wrapper">
-          <div class="hero-copy">
-            <p class="eyebrow">🚀 Engineer. Builder. Systems thinker.</p>
-            <h1>Human-centered software with agentic intelligence.</h1>
-            <p class="lead">
-              I design and ship full-stack platforms that make complex workflows
-              effortless. From voice-native data tools to AI copilots for
-              engineering teams, I align robust system design with measurable
-              outcomes.
-            </p>
-            <div class="hero-actions">
-              <a class="btn solid" href="#projects">See recent work</a>
-              <a
-                class="btn ghost"
-                href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
-                target="_blank"
-                rel="noopener"
-                >LinkedIn</a
-              >
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-badge">SOFTWARE ENGINEER</div>
+          <p class="hero-intro">
+            Passionate about creating intuitive and engaging user experiences.
+            Specialize in transforming ideas into beautifully crafted AI-first
+            products.
+          </p>
+
+          <div class="hero-grid">
+            <!-- Stats Cards -->
+            <div class="stat-card">
+              <span class="stat-number">+20</span>
+              <span class="stat-label">SHIPPED<br />PROJECTS</span>
             </div>
-            <dl class="metrics" aria-label="Career highlights">
-              <div>
-                <dt>20+</dt>
-                <dd>Shipped products & experiments</dd>
-              </div>
-              <div>
-                <dt>600+</dt>
-                <dd>GitHub contributions in 2025</dd>
-              </div>
-              <div>
-                <dt>3.68</dt>
-                <dd>CGPA, SUST CSE</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="hero-visual" data-animate="delay-fade">
-            <figure class="profile-card floating">
+            <div class="stat-card">
+              <span class="stat-number">+600</span>
+              <span class="stat-label">GITHUB<br />CONTRIBUTIONS</span>
+            </div>
+            <div class="stat-card accent">
+              <span class="stat-number">3.68</span>
+              <span class="stat-label">CGPA<br />SUST CSE</span>
+            </div>
+
+            <!-- Profile Card -->
+            <div class="profile-card">
               <img
                 src="https://avatars.githubusercontent.com/u/106917353?v=4"
-                alt="Portrait of MD Khaled Bin"
+                alt="MD Khaled Bin"
+                class="profile-img"
               />
-              <figcaption>
-                <span class="profile-title">Sylhet, Bangladesh</span>
-                <span class="profile-note"
-                  >Building AI-first engineering systems.</span
-                >
-              </figcaption>
-            </figure>
-            <div class="focus-pillars" aria-label="Focus areas">
-              <div>
-                <h3>🤖 Agentic AI</h3>
-                <p>
-                  Designing MCP-native agents that orchestrate data, tools, and
-                  teams.
-                </p>
+              <div class="profile-overlay">
+                <span class="profile-tag">AGENTIC AI, CLAUDE MCP</span>
               </div>
-              <div>
-                <h3>🧭 Product Systems</h3>
-                <p>
-                  Composing resilient, observable stacks across Next.js, Django,
-                  and realtime infra.
-                </p>
-              </div>
-              <div>
-                <h3>🏅 Competitive Mindset</h3>
-                <p>
-                  Codeforces Pupil and CodeChef 3-star, applying algorithmic
-                  rigor to product delivery.
-                </p>
+            </div>
+
+            <!-- Skills Preview Card -->
+            <div class="skills-preview-card">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop"
+                alt="Code"
+                class="skills-img"
+              />
+              <div class="skills-overlay">
+                <span class="skills-tag">NEXT.JS, DJANGO, REACT, PYTHON</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section light principles" data-animate="fade-up">
-        <div class="wrapper principles-grid">
-          <article class="principle-card">
-            <h3>🧪 Discovery to Delivery</h3>
-            <p>
-              Facilitate design sprints, define KPIs, and translate insights
-              into iterative roadmaps backed by analytics.
-            </p>
-          </article>
-          <article class="principle-card">
-            <h3>🧱 Modular Frontends</h3>
-            <p>
-              Architect component systems with accessibility-first semantics,
-              design tokens, and resilient state machines.
-            </p>
-          </article>
-          <article class="principle-card">
-            <h3>📈 Observability Built In</h3>
-            <p>
-              Ship diagnostics, tracing, and feedback loops with each release,
-              aligning operators and stakeholders.
-            </p>
-          </article>
-        </div>
-      </section>
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="title-muted">RECENT</span>PROJECTS
+          </h2>
 
-      <section class="section" id="projects" data-animate="fade-up">
-        <div class="wrapper">
-          <div class="section-heading">
-            <p class="eyebrow">Selected Impact</p>
-            <h2>Recent engineering work</h2>
-            <p class="section-lead">
-              AI-forward platforms shipped end-to-end, blending thoughtful UX
-              with reliable infrastructure.
-            </p>
-          </div>
-          <div class="project-grid">
-            <article class="project-card tilt-card" data-animate="fade-up">
-              <header>
-                <p class="project-label">AI Data Brain</p>
-                <a
-                  class="project-link"
-                  href="https://github.com/MehediHasan-75/ai_data_brain"
-                  target="_blank"
-                  rel="noopener"
-                  >View repo</a
-                >
-              </header>
-              <h3>Voice-native intelligence for collaborative tables</h3>
-              <p>
-                Built a multilingual data workspace that accepts voice, chat,
-                and manual inputs, powered by Claude MCP for direct
-                LLM-to-database reasoning and
-                <span class="highlight">sub-100ms</span> realtime sync.
-              </p>
-              <ul>
-                <li>Dynamic schema evolution without migrations</li>
-                <li>
-                  Realtime collaboration with optimistic UI and WebSockets
-                </li>
-                <li>
-                  Stack: Next.js, Django, PostgreSQL (GIN), Anthropic Claude
-                </li>
-              </ul>
-            </article>
-
-            <article class="project-card tilt-card" data-animate="fade-up">
-              <header>
-                <p class="project-label">WordPress Agent</p>
-                <span class="project-link">Internal @ Recurse AI</span>
-              </header>
-              <h3>Autonomous copilot for engineering agencies</h3>
-              <p>
-                Delivered an AI assistant that automates WordPress delivery
-                workflows, unifying RAG search, MCP tools, and deployment
-                automation to accelerate launch cycles.
-              </p>
-              <ul>
-                <li>Opinionated knowledge graph for agency playbooks</li>
-                <li>Actionable insights surfaced in developer handoffs</li>
-                <li>Stack: Next.js, Django, PostgreSQL, Vector DB, MCP</li>
-              </ul>
-            </article>
-
-            <article class="project-card tilt-card" data-animate="fade-up">
-              <header>
-                <p class="project-label">Clear Vocal</p>
-                <span class="project-link">Internal @ Recurse AI</span>
-              </header>
-              <h3>ML-powered audio separation for content teams</h3>
-              <p>
-                Crafted a production pipeline that isolates vocals and
-                instrumentals via the Invert AI API, supporting batch processing
-                with resilient queuing and monitoring hooks.
-              </p>
-              <ul>
-                <li>Secure upload handling with expiring URLs</li>
-                <li>Streaming UI feedback for long-running jobs</li>
-                <li>Stack: Next.js, Node.js, Express, MongoDB</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section light" id="experience" data-animate="fade-up">
-        <div class="wrapper">
-          <div class="section-heading">
-            <p class="eyebrow">Trajectory</p>
-            <h2>Engineering experience</h2>
-          </div>
-          <div class="timeline">
-            <article>
-              <div class="timeline-meta">
-                <span class="timeline-role">Software Engineer Intern</span>
-                <span class="timeline-place"
-                  >Recurse AI · Feb 2025 – Jul 2025</span
-                >
-              </div>
-              <p>
-                Delivered AI-first products end-to-end in a startup cadence,
-                including autonomous WordPress agents and ML-backed audio
-                tooling.
-              </p>
-              <ul>
-                <li>
-                  Built shipping pipeline that paired MCP agents with human QA
-                  gates
-                </li>
-                <li>
-                  Integrated analytics and observability to surface product
-                  health
-                </li>
-                <li>
-                  Championed rapid iteration rituals to align stakeholders
-                </li>
-              </ul>
-            </article>
-            <article>
-              <div class="timeline-meta">
-                <span class="timeline-role"
-                  >AI Model Trainer (Data Annotation)</span
-                >
-                <span class="timeline-place"
-                  >Remotask · Jun 2023 – Sep 2023</span
-                >
-              </div>
-              <p>
-                Curated coding and competitive programming datasets to uplift
-                LLM reasoning, tightening evaluation loops with research teams.
-              </p>
-              <ul>
-                <li>
-                  Designed annotation templates that reduced rejection rates
-                </li>
-                <li>
-                  Specialized in algorithmic prompts for code generation models
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills" data-animate="fade-up">
-        <div class="wrapper">
-          <div class="section-heading">
-            <p class="eyebrow">Core Toolkit</p>
-            <h2>Systems I build with</h2>
-          </div>
-          <div class="skills-grid">
-            <div>
-              <h3>Languages</h3>
-              <p>JavaScript, TypeScript, Python, Java, C/C++</p>
-            </div>
-            <div>
-              <h3>Frontend</h3>
-              <p>
-                React, Next.js, Tailwind, design systems, accessibility-first UX
-              </p>
-            </div>
-            <div>
-              <h3>Backend</h3>
-              <p>Django REST, FastAPI, Express, Node.js, real-time services</p>
-            </div>
-            <div>
-              <h3>Data & Infra</h3>
-              <p>PostgreSQL, MySQL, SQLite, MongoDB, Docker, CI/CD pipelines</p>
-            </div>
-            <div>
-              <h3>AI & Agents</h3>
-              <p>
-                Anthropic Claude, MCP servers/clients, retrieval pipelines, ML
-                ops
-              </p>
-            </div>
-            <div>
-              <h3>Collaboration</h3>
-              <p>Git, GitHub, Notion, Linear, analytics-informed roadmapping</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section light" id="achievements" data-animate="fade-up">
-        <div class="wrapper">
-          <div class="section-heading">
-            <p class="eyebrow">Signals</p>
-            <h2>Recognition & milestones</h2>
-          </div>
-          <div class="achievement-grid">
-            <article class="achievement-card" data-animate="fade-up">
-              <div class="achievement-icon" aria-hidden="true">🏆</div>
-              <div class="achievement-body">
-                <h3>Reactive Accelerator Champion</h3>
-                <p>
-                  Winner of Sumit Saha’s capstone program, delivering a
-                  production-grade React ecosystem from brief to handoff.
-                </p>
-              </div>
-              <a
-                href="https://learnwithsumit.com/certificates/verify/LWSCTXN-YKS3LO66"
-                target="_blank"
-                rel="noopener"
-                class="achievement-cta"
-                >Verify credential →</a
-              >
-            </article>
-            <article class="achievement-card" data-animate="fade-up">
-              <div class="achievement-icon" aria-hidden="true">⚔️</div>
-              <div class="achievement-body">
-                <h3>Codeforces Pupil</h3>
-                <p>
-                  Algorithmic rigor honed through live contests, translating
-                  speed and correctness into scalable platform design.
-                </p>
-              </div>
-              <a
-                href="https://codeforces.com/profile/bonu_malitha"
-                target="_blank"
-                rel="noopener"
-                class="achievement-cta"
-                >View profile →</a
-              >
-            </article>
-            <article class="achievement-card" data-animate="fade-up">
-              <div class="achievement-icon" aria-hidden="true">🎯</div>
-              <div class="achievement-body">
-                <h3>CodeChef 3-star</h3>
-                <p>
-                  Consistent podium finishes in rated rounds, reinforcing
-                  disciplined problem solving under tight constraints.
-                </p>
-              </div>
-              <a
-                href="https://www.codechef.com/users/nuhupaikumbar"
-                target="_blank"
-                rel="noopener"
-                class="achievement-cta"
-                >View profile →</a
-              >
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact" data-animate="fade-up">
-        <div class="wrapper contact-card">
-          <div>
-            <p class="eyebrow">Connect</p>
-            <h2>Let us build the next system.</h2>
-            <p>
-              Whether you need an AI-native workflow, a resilient product
-              platform, or a strategic engineering partner, I am ready to
-              collaborate.
-            </p>
-          </div>
-          <div class="contact-actions">
-            <a class="btn solid" href="mailto:mdkhaledbin221@gmail.com"
-              >Email me</a
-            >
+          <div class="projects-grid">
             <a
-              class="btn ghost"
-              href="https://github.com/mdkhaledbin"
+              href="https://github.com/MehediHasan-75/ai_data_brain"
               target="_blank"
               rel="noopener"
-              >GitHub</a
+              class="project-card large"
             >
+              <div class="project-content">
+                <span class="project-label">AI Data Brain</span>
+                <h3 class="project-title">
+                  Voice-native intelligence for collaborative tables
+                </h3>
+                <p class="project-desc">
+                  Built a multilingual workspace powered by Claude MCP for
+                  direct LLM-to-database reasoning with sub-100ms realtime sync.
+                </p>
+                <span class="project-link">View Project →</span>
+              </div>
+              <div class="project-visual">
+                <div class="project-icon">🧠</div>
+              </div>
+            </a>
+
+            <div class="project-card">
+              <div class="project-content">
+                <span class="project-label">WordPress Agent</span>
+                <h3 class="project-title">
+                  Autonomous copilot for engineering agencies
+                </h3>
+                <p class="project-desc">
+                  AI assistant automating WordPress workflows with RAG search
+                  and MCP tools.
+                </p>
+                <span class="project-link muted">Internal @ Recurse AI</span>
+              </div>
+              <div class="project-visual">
+                <div class="project-icon">🤖</div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-content">
+                <span class="project-label">Clear Vocal</span>
+                <h3 class="project-title">ML-powered audio separation</h3>
+                <p class="project-desc">
+                  Production pipeline isolating vocals via Invert AI API with
+                  resilient queuing.
+                </p>
+                <span class="project-link muted">Internal @ Recurse AI</span>
+              </div>
+              <div class="project-visual">
+                <div class="project-icon">🎵</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="title-muted">MY</span>EXPERIENCE
+          </h2>
+
+          <div class="experience-grid">
             <a
-              class="btn ghost"
               href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
               target="_blank"
               rel="noopener"
-              >LinkedIn</a
+              class="experience-card"
             >
+              <div class="experience-header">
+                <span class="experience-company">Recurse AI</span>
+                <span class="experience-date">Feb 2025 - Jul 2025</span>
+              </div>
+              <h3 class="experience-role">Software Engineer Intern</h3>
+              <p class="experience-desc">
+                Delivered AI-first products end-to-end including autonomous
+                WordPress agents and ML-backed audio tooling. Built shipping
+                pipelines pairing MCP agents with human QA gates.
+              </p>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
+              target="_blank"
+              rel="noopener"
+              class="experience-card"
+            >
+              <div class="experience-header">
+                <span class="experience-company">Remotask</span>
+                <span class="experience-date">Jun 2023 - Sep 2023</span>
+              </div>
+              <h3 class="experience-role">AI Model Trainer</h3>
+              <p class="experience-desc">
+                Curated coding and competitive programming datasets to uplift
+                LLM reasoning. Designed annotation templates that reduced
+                rejection rates.
+              </p>
+            </a>
+
+            <div class="experience-card highlight">
+              <div class="experience-header">
+                <span class="experience-company">SUST</span>
+                <span class="experience-date">2021 - Present</span>
+              </div>
+              <h3 class="experience-role">BSc in Computer Science</h3>
+              <p class="experience-desc">
+                Shahjalal University of Science and Technology. CGPA: 3.68.
+                Focus on algorithms, systems design, and AI/ML foundations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools Section -->
+      <section class="section" id="tools">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="title-muted">PREMIUM</span>TOOLS
+          </h2>
+
+          <div class="tools-grid">
+            <a
+              href="https://nextjs.org"
+              target="_blank"
+              rel="noopener"
+              class="tool-card"
+            >
+              <span class="tool-icon">▲</span>
+              <span class="tool-name">Next.js</span>
+              <span class="tool-desc">React Framework</span>
+            </a>
+            <a
+              href="https://www.djangoproject.com"
+              target="_blank"
+              rel="noopener"
+              class="tool-card"
+            >
+              <span class="tool-icon">🎸</span>
+              <span class="tool-name">Django</span>
+              <span class="tool-desc">Python Framework</span>
+            </a>
+            <a
+              href="https://react.dev"
+              target="_blank"
+              rel="noopener"
+              class="tool-card"
+            >
+              <span class="tool-icon">⚛️</span>
+              <span class="tool-name">React</span>
+              <span class="tool-desc">UI Library</span>
+            </a>
+            <a
+              href="https://www.anthropic.com"
+              target="_blank"
+              rel="noopener"
+              class="tool-card"
+            >
+              <span class="tool-icon">🤖</span>
+              <span class="tool-name">Claude AI</span>
+              <span class="tool-desc">AI Assistant</span>
+            </a>
+            <a
+              href="https://www.postgresql.org"
+              target="_blank"
+              rel="noopener"
+              class="tool-card"
+            >
+              <span class="tool-icon">🐘</span>
+              <span class="tool-name">PostgreSQL</span>
+              <span class="tool-desc">Database</span>
+            </a>
+            <a
+              href="https://www.docker.com"
+              target="_blank"
+              rel="noopener"
+              class="tool-card"
+            >
+              <span class="tool-icon">🐳</span>
+              <span class="tool-name">Docker</span>
+              <span class="tool-desc">Containerization</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section class="section section-alt" id="achievements">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="title-muted">KEY</span>ACHIEVEMENTS
+          </h2>
+
+          <div class="achievements-grid">
+            <a
+              href="https://learnwithsumit.com/certificates/verify/LWSCTXN-YKS3LO66"
+              target="_blank"
+              rel="noopener"
+              class="achievement-card"
+            >
+              <div class="achievement-icon">🏆</div>
+              <h3>Reactive Accelerator Champion</h3>
+              <p>
+                Winner of Sumit Saha's capstone program, delivering
+                production-grade React ecosystem.
+              </p>
+            </a>
+            <a
+              href="https://codeforces.com/profile/bonu_malitha"
+              target="_blank"
+              rel="noopener"
+              class="achievement-card"
+            >
+              <div class="achievement-icon">⚔️</div>
+              <h3>Codeforces Pupil</h3>
+              <p>
+                Algorithmic rigor through live contests, translating speed into
+                scalable design.
+              </p>
+            </a>
+            <a
+              href="https://www.codechef.com/users/nuhupaikumbar"
+              target="_blank"
+              rel="noopener"
+              class="achievement-card"
+            >
+              <div class="achievement-icon">🎯</div>
+              <h3>CodeChef 3-Star</h3>
+              <p>
+                Consistent podium finishes reinforcing disciplined problem
+                solving.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="title-muted">LET'S WORK</span>TOGETHER
+          </h2>
+
+          <div class="contact-card">
+            <div class="contact-info">
+              <p class="contact-text">
+                Whether you need an AI-native workflow, a resilient product
+                platform, or a strategic engineering partner — I'm ready to
+                collaborate.
+              </p>
+              <div class="contact-links">
+                <a
+                  href="mailto:mdkhaledbin221@gmail.com"
+                  class="btn btn-primary btn-lg"
+                >
+                  <span>Send Email</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/mdkhaledbin"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline"
+                  >GitHub</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="wrapper">
-        <p>
-          © <span id="year"></span> MD Khaled Bin. Crafted with care in Sylhet.
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-info">
+          <span class="footer-name">MD Khaled Bin</span>
+          <p class="footer-bio">
+            A Software Engineer crafting agentic AI solutions from Sylhet,
+            Bangladesh.
+          </p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://github.com/mdkhaledbin"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+          </a>
+          <a href="mailto:mdkhaledbin221@gmail.com" aria-label="Email">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-credit">
+          Design inspiration by
+          <a href="https://sawad.framer.website/" target="_blank" rel="noopener"
+            >sawad.framer.website</a
+          >
         </p>
       </div>
     </footer>
 
     <button class="scroll-top" type="button" aria-label="Scroll to top">
-      ↑
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
     </button>
 
     <script>
-      const root = document.body;
+      // Theme toggle
+      const root = document.documentElement;
       const themeToggle = document.querySelector(".theme-toggle");
-      const themeIcon = themeToggle?.querySelector(".theme-icon");
-      const themeLabel = themeToggle?.querySelector(".theme-label");
 
-      const prefersDark = () =>
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-      const getStoredTheme = () => {
-        try {
-          return localStorage.getItem("preferred-theme");
-        } catch (error) {
-          return null;
-        }
-      };
-
-      const storeTheme = (theme) => {
-        try {
-          localStorage.setItem("preferred-theme", theme);
-        } catch (error) {
-          /* no-op when storage is unavailable */
-        }
-      };
-
-      const updateToggleContent = (theme) => {
-        if (!themeIcon || !themeLabel) {
-          return;
-        }
-
-        if (theme === "dark") {
-          themeIcon.textContent = "☀️";
-          themeLabel.textContent = "Light mode";
-        } else {
-          themeIcon.textContent = "🌙";
-          themeLabel.textContent = "Dark mode";
-        }
-      };
+      const getStoredTheme = () => localStorage.getItem("theme");
+      const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
 
       const applyTheme = (theme) => {
-        if (!root) {
-          return;
-        }
-
-        const nextTheme = theme === "dark" ? "dark" : "light";
-        root.setAttribute("data-theme", nextTheme);
-        updateToggleContent(nextTheme);
+        root.setAttribute("data-theme", theme);
       };
 
       const initTheme = () => {
-        const storedTheme = getStoredTheme();
-        const initialTheme = storedTheme || (prefersDark() ? "dark" : "light");
-        applyTheme(initialTheme);
+        const stored = getStoredTheme();
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        applyTheme(stored || (prefersDark ? "dark" : "light"));
       };
 
       initTheme();
 
       themeToggle?.addEventListener("click", () => {
-        const currentTheme =
-          root.getAttribute("data-theme") === "dark" ? "dark" : "light";
-        const nextTheme = currentTheme === "dark" ? "light" : "dark";
-        applyTheme(nextTheme);
-        storeTheme(nextTheme);
+        const current = root.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        applyTheme(next);
+        setStoredTheme(next);
       });
 
-      if (window.matchMedia) {
-        window
-          .matchMedia("(prefers-color-scheme: dark)")
-          .addEventListener("change", (event) => {
-            const storedTheme = getStoredTheme();
-            if (storedTheme) {
-              return;
-            }
-            applyTheme(event.matches ? "dark" : "light");
-          });
-      }
-
+      // Year
       const yearEl = document.getElementById("year");
-      if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
-      }
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-      const animatedNodes = document.querySelectorAll("[data-animate]");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.2,
-        }
-      );
+      // Scroll animations
+      const animateOnScroll = () => {
+        const elements = document.querySelectorAll(
+          ".hero-grid > *, .project-card, .experience-card, .tool-card, .achievement-card"
+        );
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                entry.target.style.transitionDelay = `${index * 0.05}s`;
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
 
-      animatedNodes.forEach((node) => observer.observe(node));
-
-      const scrollBtn = document.querySelector(".scroll-top");
-      const toggleScrollBtn = () => {
-        if (window.scrollY > 480) {
-          scrollBtn.classList.add("show");
-        } else {
-          scrollBtn.classList.remove("show");
-        }
+        elements.forEach((el) => observer.observe(el));
       };
 
-      toggleScrollBtn();
-      window.addEventListener("scroll", toggleScrollBtn);
-      scrollBtn.addEventListener("click", () => {
+      animateOnScroll();
+
+      // Scroll to top
+      const scrollBtn = document.querySelector(".scroll-top");
+      window.addEventListener("scroll", () => {
+        scrollBtn.classList.toggle("show", window.scrollY > 400);
+      });
+      scrollBtn?.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
