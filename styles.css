@@ -212,6 +212,132 @@ img {
   }
 }
 
+/* Sidebar floating icons */
+.sidebar-floating-icons {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sidebar-icon {
+  position: absolute;
+  opacity: 0.12;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.sidebar-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--bg);
+}
+
+/* Position sidebar icons */
+.sidebar-icon.s-icon-1 {
+  top: 8%;
+  left: 10%;
+  animation: sidebarFloat1 9s infinite;
+}
+.sidebar-icon.s-icon-2 {
+  top: 20%;
+  right: 8%;
+  animation: sidebarFloat2 11s infinite;
+}
+.sidebar-icon.s-icon-3 {
+  top: 45%;
+  left: 6%;
+  animation: sidebarFloat3 8s infinite;
+}
+.sidebar-icon.s-icon-4 {
+  top: 60%;
+  right: 12%;
+  animation: sidebarFloat4 10s infinite;
+}
+.sidebar-icon.s-icon-5 {
+  bottom: 25%;
+  left: 12%;
+  animation: sidebarFloat5 12s infinite;
+}
+.sidebar-icon.s-icon-6 {
+  bottom: 10%;
+  right: 6%;
+  animation: sidebarFloat6 9s infinite;
+}
+
+@keyframes sidebarFloat1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(8px, 12px) rotate(15deg);
+    opacity: 0.18;
+  }
+}
+
+@keyframes sidebarFloat2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate(-10px, 8px) rotate(-10deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes sidebarFloat3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(6px, -10px) scale(1.1);
+    opacity: 0.18;
+  }
+}
+
+@keyframes sidebarFloat4 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate(-8px, -6px) rotate(12deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes sidebarFloat5 {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-15px) rotate(8deg);
+    opacity: 0.18;
+  }
+}
+
+@keyframes sidebarFloat6 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate(10px, 10px) scale(1.15);
+    opacity: 0.2;
+  }
+}
+
 /* Animated gradient orbs on sidebar */
 .sidebar::after {
   content: "";
