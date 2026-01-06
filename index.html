@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-theme="light">
     <header class="site-header" data-animate="fade-down">
       <div class="wrapper">
         <div class="brand">
@@ -30,6 +30,14 @@
           <a href="#contact">Contact</a>
         </nav>
         <div class="header-cta">
+          <button
+            class="btn ghost theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+            <span class="theme-label">Dark mode</span>
+          </button>
           <a
             class="btn ghost"
             href="https://github.com/mdkhaledbin"
@@ -46,7 +54,8 @@
 
     <main>
       <section class="hero" id="about" data-animate="fade-up">
-        <div class="wrapper hero-grid">
+        <div class="hero-orb" aria-hidden="true"></div>
+        <div class="hero-grid wrapper">
           <div class="hero-copy">
             <p class="eyebrow">🚀 Engineer. Builder. Systems thinker.</p>
             <h1>Human-centered software with agentic intelligence.</h1>
@@ -118,6 +127,32 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section light principles" data-animate="fade-up">
+        <div class="wrapper principles-grid">
+          <article class="principle-card">
+            <h3>🧪 Discovery to Delivery</h3>
+            <p>
+              Facilitate design sprints, define KPIs, and translate insights
+              into iterative roadmaps backed by analytics.
+            </p>
+          </article>
+          <article class="principle-card">
+            <h3>🧱 Modular Frontends</h3>
+            <p>
+              Architect component systems with accessibility-first semantics,
+              design tokens, and resilient state machines.
+            </p>
+          </article>
+          <article class="principle-card">
+            <h3>📈 Observability Built In</h3>
+            <p>
+              Ship diagnostics, tracing, and feedback loops with each release,
+              aligning operators and stakeholders.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -408,6 +443,83 @@
     </button>
 
     <script>
+      const root = document.body;
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeIcon = themeToggle?.querySelector(".theme-icon");
+      const themeLabel = themeToggle?.querySelector(".theme-label");
+
+      const prefersDark = () =>
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      const getStoredTheme = () => {
+        try {
+          return localStorage.getItem("preferred-theme");
+        } catch (error) {
+          return null;
+        }
+      };
+
+      const storeTheme = (theme) => {
+        try {
+          localStorage.setItem("preferred-theme", theme);
+        } catch (error) {
+          /* no-op when storage is unavailable */
+        }
+      };
+
+      const updateToggleContent = (theme) => {
+        if (!themeIcon || !themeLabel) {
+          return;
+        }
+
+        if (theme === "dark") {
+          themeIcon.textContent = "☀️";
+          themeLabel.textContent = "Light mode";
+        } else {
+          themeIcon.textContent = "🌙";
+          themeLabel.textContent = "Dark mode";
+        }
+      };
+
+      const applyTheme = (theme) => {
+        if (!root) {
+          return;
+        }
+
+        const nextTheme = theme === "dark" ? "dark" : "light";
+        root.setAttribute("data-theme", nextTheme);
+        updateToggleContent(nextTheme);
+      };
+
+      const initTheme = () => {
+        const storedTheme = getStoredTheme();
+        const initialTheme = storedTheme || (prefersDark() ? "dark" : "light");
+        applyTheme(initialTheme);
+      };
+
+      initTheme();
+
+      themeToggle?.addEventListener("click", () => {
+        const currentTheme =
+          root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+        const nextTheme = currentTheme === "dark" ? "light" : "dark";
+        applyTheme(nextTheme);
+        storeTheme(nextTheme);
+      });
+
+      if (window.matchMedia) {
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (event) => {
+            const storedTheme = getStoredTheme();
+            if (storedTheme) {
+              return;
+            }
+            applyTheme(event.matches ? "dark" : "light");
+          });
+      }
+
       const yearEl = document.getElementById("year");
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
