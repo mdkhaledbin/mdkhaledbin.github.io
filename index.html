@@ -3,227 +3,207 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="MD Khaled Bin - Software engineer crafting agentic AI products and resilient product systems."
-    />
+    <meta name="description" content="MD Khaled Bin - Software engineer crafting agentic AI products and resilient product systems." />
     <title>MD Khaled Bin | Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container header-inner">
-        <a href="#" class="logo">
-          <span class="logo-icon">KB</span>
-        </a>
-        <nav class="nav">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#tools">Tools</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="header-actions">
+    <div class="layout">
+      <!-- Fixed Left Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <!-- Profile -->
+          <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/106917353?v=4" alt="MD Khaled Bin" class="profile-img" />
+            <h1 class="profile-name">MD Khaled Bin</h1>
+            <p class="profile-title">Software Engineer</p>
+            <p class="profile-bio">Crafting agentic AI solutions and resilient product systems from Sylhet, Bangladesh.</p>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://github.com/mdkhaledbin" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/mdkhaledbin" target="_blank" rel="noopener" aria-label="Twitter" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="mailto:mdkhaledbin221@gmail.com" aria-label="Email" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Theme Toggle -->
           <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            <svg
-              class="icon-sun"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="5"></circle>
-              <path
-                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-              ></path>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
             </svg>
-            <svg
-              class="icon-moon"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
-          <a href="mailto:mdkhaledbin221@gmail.com" class="btn btn-primary"
-            >Let's Talk</a
-          >
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero-badge">SOFTWARE ENGINEER</div>
-          <p class="hero-intro">
-            Passionate about creating intuitive and engaging user experiences.
-            Specialize in transforming ideas into beautifully crafted AI-first
-            products.
+          <!-- Footer Credit -->
+          <p class="sidebar-credit">
+            Design by <a href="https://sawad.framer.website/" target="_blank" rel="noopener">sawad.framer.website</a>
           </p>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Navigation Bar (Icon-based) -->
+        <nav class="navbar">
+          <a href="#home" class="nav-link active" data-tooltip="Home">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </a>
+          <a href="#projects" class="nav-link" data-tooltip="Projects">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+            </svg>
+          </a>
+          <a href="#experience" class="nav-link" data-tooltip="Experience">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </a>
+          <a href="#tools" class="nav-link" data-tooltip="Tools">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </a>
+          <a href="#achievements" class="nav-link" data-tooltip="Achievements">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+          </a>
+          <a href="#contact" class="nav-link" data-tooltip="Contact">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="section hero" id="home">
+          <div class="hero-badge">SOFTWARE ENGINEER</div>
+          <h2 class="hero-title">
+            Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted <span class="highlight">AI-first products</span>.
+          </h2>
 
           <div class="hero-grid">
-            <!-- Stats Cards -->
             <div class="stat-card">
               <span class="stat-number">+20</span>
-              <span class="stat-label">SHIPPED<br />PROJECTS</span>
+              <span class="stat-label">SHIPPED<br/>PROJECTS</span>
             </div>
             <div class="stat-card">
               <span class="stat-number">+600</span>
-              <span class="stat-label">GITHUB<br />CONTRIBUTIONS</span>
+              <span class="stat-label">GITHUB<br/>CONTRIBUTIONS</span>
             </div>
             <div class="stat-card accent">
               <span class="stat-number">3.68</span>
-              <span class="stat-label">CGPA<br />SUST CSE</span>
+              <span class="stat-label">CGPA<br/>SUST CSE</span>
             </div>
 
-            <!-- Profile Card -->
-            <div class="profile-card">
-              <img
-                src="https://avatars.githubusercontent.com/u/106917353?v=4"
-                alt="MD Khaled Bin"
-                class="profile-img"
-              />
-              <div class="profile-overlay">
-                <span class="profile-tag">AGENTIC AI, CLAUDE MCP</span>
+            <div class="visual-card">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="Code" />
+              <div class="visual-overlay">
+                <span>AGENTIC AI, CLAUDE MCP</span>
               </div>
             </div>
 
-            <!-- Skills Preview Card -->
-            <div class="skills-preview-card">
-              <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop"
-                alt="Code"
-                class="skills-img"
-              />
-              <div class="skills-overlay">
-                <span class="skills-tag">NEXT.JS, DJANGO, REACT, PYTHON</span>
+            <div class="visual-card">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Development" />
+              <div class="visual-overlay">
+                <span>NEXT.JS, DJANGO, REACT</span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Projects Section -->
-      <section class="section" id="projects">
-        <div class="container">
+        <!-- Projects Section -->
+        <section class="section" id="projects">
           <h2 class="section-title">
             <span class="title-muted">RECENT</span>PROJECTS
           </h2>
 
           <div class="projects-grid">
-            <a
-              href="https://github.com/MehediHasan-75/ai_data_brain"
-              target="_blank"
-              rel="noopener"
-              class="project-card large"
-            >
+            <a href="https://github.com/MehediHasan-75/ai_data_brain" target="_blank" rel="noopener" class="project-card featured">
               <div class="project-content">
                 <span class="project-label">AI Data Brain</span>
-                <h3 class="project-title">
-                  Voice-native intelligence for collaborative tables
-                </h3>
-                <p class="project-desc">
-                  Built a multilingual workspace powered by Claude MCP for
-                  direct LLM-to-database reasoning with sub-100ms realtime sync.
-                </p>
+                <h3 class="project-title">Voice-native intelligence for collaborative tables</h3>
+                <p class="project-desc">Built a multilingual workspace powered by Claude MCP for direct LLM-to-database reasoning with sub-100ms realtime sync.</p>
                 <span class="project-link">View Project →</span>
               </div>
-              <div class="project-visual">
-                <div class="project-icon">🧠</div>
-              </div>
+              <div class="project-icon">🧠</div>
             </a>
 
             <div class="project-card">
               <div class="project-content">
                 <span class="project-label">WordPress Agent</span>
-                <h3 class="project-title">
-                  Autonomous copilot for engineering agencies
-                </h3>
-                <p class="project-desc">
-                  AI assistant automating WordPress workflows with RAG search
-                  and MCP tools.
-                </p>
+                <h3 class="project-title">Autonomous copilot for engineering agencies</h3>
+                <p class="project-desc">AI assistant automating WordPress workflows with RAG search and MCP tools.</p>
                 <span class="project-link muted">Internal @ Recurse AI</span>
               </div>
-              <div class="project-visual">
-                <div class="project-icon">🤖</div>
-              </div>
+              <div class="project-icon">🤖</div>
             </div>
 
             <div class="project-card">
               <div class="project-content">
                 <span class="project-label">Clear Vocal</span>
                 <h3 class="project-title">ML-powered audio separation</h3>
-                <p class="project-desc">
-                  Production pipeline isolating vocals via Invert AI API with
-                  resilient queuing.
-                </p>
+                <p class="project-desc">Production pipeline isolating vocals via Invert AI API with resilient queuing.</p>
                 <span class="project-link muted">Internal @ Recurse AI</span>
               </div>
-              <div class="project-visual">
-                <div class="project-icon">🎵</div>
-              </div>
+              <div class="project-icon">🎵</div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Experience Section -->
-      <section class="section section-alt" id="experience">
-        <div class="container">
+        <!-- Experience Section -->
+        <section class="section" id="experience">
           <h2 class="section-title">
             <span class="title-muted">MY</span>EXPERIENCE
           </h2>
 
           <div class="experience-grid">
-            <a
-              href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
-              target="_blank"
-              rel="noopener"
-              class="experience-card"
-            >
+            <a href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/" target="_blank" rel="noopener" class="experience-card">
               <div class="experience-header">
                 <span class="experience-company">Recurse AI</span>
                 <span class="experience-date">Feb 2025 - Jul 2025</span>
               </div>
               <h3 class="experience-role">Software Engineer Intern</h3>
-              <p class="experience-desc">
-                Delivered AI-first products end-to-end including autonomous
-                WordPress agents and ML-backed audio tooling. Built shipping
-                pipelines pairing MCP agents with human QA gates.
-              </p>
+              <p class="experience-desc">Delivered AI-first products end-to-end including autonomous WordPress agents and ML-backed audio tooling. Built shipping pipelines pairing MCP agents with human QA gates.</p>
             </a>
 
-            <a
-              href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
-              target="_blank"
-              rel="noopener"
-              class="experience-card"
-            >
+            <a href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/" target="_blank" rel="noopener" class="experience-card">
               <div class="experience-header">
                 <span class="experience-company">Remotask</span>
                 <span class="experience-date">Jun 2023 - Sep 2023</span>
               </div>
               <h3 class="experience-role">AI Model Trainer</h3>
-              <p class="experience-desc">
-                Curated coding and competitive programming datasets to uplift
-                LLM reasoning. Designed annotation templates that reduced
-                rejection rates.
-              </p>
+              <p class="experience-desc">Curated coding and competitive programming datasets to uplift LLM reasoning. Designed annotation templates that reduced rejection rates.</p>
             </a>
 
             <div class="experience-card highlight">
@@ -232,327 +212,223 @@
                 <span class="experience-date">2021 - Present</span>
               </div>
               <h3 class="experience-role">BSc in Computer Science</h3>
-              <p class="experience-desc">
-                Shahjalal University of Science and Technology. CGPA: 3.68.
-                Focus on algorithms, systems design, and AI/ML foundations.
-              </p>
+              <p class="experience-desc">Shahjalal University of Science and Technology. CGPA: 3.68. Focus on algorithms, systems design, and AI/ML foundations.</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Tools Section -->
-      <section class="section" id="tools">
-        <div class="container">
+        <!-- Tools Section -->
+        <section class="section" id="tools">
           <h2 class="section-title">
             <span class="title-muted">PREMIUM</span>TOOLS
           </h2>
 
           <div class="tools-grid">
-            <a
-              href="https://nextjs.org"
-              target="_blank"
-              rel="noopener"
-              class="tool-card"
-            >
+            <a href="https://nextjs.org" target="_blank" rel="noopener" class="tool-card">
               <span class="tool-icon">▲</span>
               <span class="tool-name">Next.js</span>
               <span class="tool-desc">React Framework</span>
             </a>
-            <a
-              href="https://www.djangoproject.com"
-              target="_blank"
-              rel="noopener"
-              class="tool-card"
-            >
+            <a href="https://www.djangoproject.com" target="_blank" rel="noopener" class="tool-card">
               <span class="tool-icon">🎸</span>
               <span class="tool-name">Django</span>
               <span class="tool-desc">Python Framework</span>
             </a>
-            <a
-              href="https://react.dev"
-              target="_blank"
-              rel="noopener"
-              class="tool-card"
-            >
+            <a href="https://react.dev" target="_blank" rel="noopener" class="tool-card">
               <span class="tool-icon">⚛️</span>
               <span class="tool-name">React</span>
               <span class="tool-desc">UI Library</span>
             </a>
-            <a
-              href="https://www.anthropic.com"
-              target="_blank"
-              rel="noopener"
-              class="tool-card"
-            >
+            <a href="https://www.anthropic.com" target="_blank" rel="noopener" class="tool-card">
               <span class="tool-icon">🤖</span>
               <span class="tool-name">Claude AI</span>
               <span class="tool-desc">AI Assistant</span>
             </a>
-            <a
-              href="https://www.postgresql.org"
-              target="_blank"
-              rel="noopener"
-              class="tool-card"
-            >
+            <a href="https://www.postgresql.org" target="_blank" rel="noopener" class="tool-card">
               <span class="tool-icon">🐘</span>
               <span class="tool-name">PostgreSQL</span>
               <span class="tool-desc">Database</span>
             </a>
-            <a
-              href="https://www.docker.com"
-              target="_blank"
-              rel="noopener"
-              class="tool-card"
-            >
+            <a href="https://www.docker.com" target="_blank" rel="noopener" class="tool-card">
               <span class="tool-icon">🐳</span>
               <span class="tool-name">Docker</span>
               <span class="tool-desc">Containerization</span>
             </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Achievements Section -->
-      <section class="section section-alt" id="achievements">
-        <div class="container">
+        <!-- Achievements Section -->
+        <section class="section" id="achievements">
           <h2 class="section-title">
             <span class="title-muted">KEY</span>ACHIEVEMENTS
           </h2>
 
           <div class="achievements-grid">
-            <a
-              href="https://learnwithsumit.com/certificates/verify/LWSCTXN-YKS3LO66"
-              target="_blank"
-              rel="noopener"
-              class="achievement-card"
-            >
+            <a href="https://learnwithsumit.com/certificates/verify/LWSCTXN-YKS3LO66" target="_blank" rel="noopener" class="achievement-card">
               <div class="achievement-icon">🏆</div>
               <h3>Reactive Accelerator Champion</h3>
-              <p>
-                Winner of Sumit Saha's capstone program, delivering
-                production-grade React ecosystem.
-              </p>
+              <p>Winner of Sumit Saha's capstone program, delivering production-grade React ecosystem.</p>
             </a>
-            <a
-              href="https://codeforces.com/profile/bonu_malitha"
-              target="_blank"
-              rel="noopener"
-              class="achievement-card"
-            >
+            <a href="https://codeforces.com/profile/bonu_malitha" target="_blank" rel="noopener" class="achievement-card">
               <div class="achievement-icon">⚔️</div>
               <h3>Codeforces Pupil</h3>
-              <p>
-                Algorithmic rigor through live contests, translating speed into
-                scalable design.
-              </p>
+              <p>Algorithmic rigor through live contests, translating speed into scalable design.</p>
             </a>
-            <a
-              href="https://www.codechef.com/users/nuhupaikumbar"
-              target="_blank"
-              rel="noopener"
-              class="achievement-card"
-            >
+            <a href="https://www.codechef.com/users/nuhupaikumbar" target="_blank" rel="noopener" class="achievement-card">
               <div class="achievement-icon">🎯</div>
               <h3>CodeChef 3-Star</h3>
-              <p>
-                Consistent podium finishes reinforcing disciplined problem
-                solving.
-              </p>
+              <p>Consistent podium finishes reinforcing disciplined problem solving.</p>
             </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Contact Section -->
-      <section class="section" id="contact">
-        <div class="container">
+        <!-- Contact Section -->
+        <section class="section" id="contact">
           <h2 class="section-title">
             <span class="title-muted">LET'S WORK</span>TOGETHER
           </h2>
 
           <div class="contact-card">
-            <div class="contact-info">
-              <p class="contact-text">
-                Whether you need an AI-native workflow, a resilient product
-                platform, or a strategic engineering partner — I'm ready to
-                collaborate.
-              </p>
-              <div class="contact-links">
-                <a
-                  href="mailto:mdkhaledbin221@gmail.com"
-                  class="btn btn-primary btn-lg"
-                >
-                  <span>Send Email</span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a
-                  href="https://github.com/mdkhaledbin"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline"
-                  >GitHub</a
-                >
-                <a
-                  href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-outline"
-                  >LinkedIn</a
-                >
-              </div>
+            <p class="contact-text">Whether you need an AI-native workflow, a resilient product platform, or a strategic engineering partner — I'm ready to collaborate.</p>
+            <div class="contact-links">
+              <a href="mailto:mdkhaledbin221@gmail.com" class="btn btn-primary">
+                <span>Send Email</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="https://github.com/mdkhaledbin" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+              <a href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-info">
-          <span class="footer-name">MD Khaled Bin</span>
-          <p class="footer-bio">
-            A Software Engineer crafting agentic AI solutions from Sylhet,
-            Bangladesh.
-          </p>
-        </div>
-        <div class="footer-social">
-          <a
-            href="https://github.com/mdkhaledbin"
-            target="_blank"
-            rel="noopener"
-            aria-label="GitHub"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/md-khaled-bin-814a4b225/"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-              />
-            </svg>
-          </a>
-          <a href="mailto:mdkhaledbin221@gmail.com" aria-label="Email">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-              />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-          </a>
-        </div>
-        <p class="footer-credit">
-          Design inspiration by
-          <a href="https://sawad.framer.website/" target="_blank" rel="noopener"
-            >sawad.framer.website</a
-          >
-        </p>
-      </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+          <p>© 2025 MD Khaled Bin. Built with care in Sylhet.</p>
+        </footer>
+      </main>
+    </div>
 
-    <button class="scroll-top" type="button" aria-label="Scroll to top">
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path d="M18 15l-6-6-6 6" />
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" type="button" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
       </svg>
     </button>
 
     <script>
       // Theme toggle
       const root = document.documentElement;
-      const themeToggle = document.querySelector(".theme-toggle");
-
-      const getStoredTheme = () => localStorage.getItem("theme");
-      const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
-
+      const themeToggle = document.querySelector('.theme-toggle');
+      
+      const getStoredTheme = () => localStorage.getItem('theme');
+      const setStoredTheme = (theme) => localStorage.setItem('theme', theme);
+      
       const applyTheme = (theme) => {
-        root.setAttribute("data-theme", theme);
+        root.setAttribute('data-theme', theme);
       };
-
+      
       const initTheme = () => {
         const stored = getStoredTheme();
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        applyTheme(stored || (prefersDark ? "dark" : "light"));
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(stored || (prefersDark ? 'dark' : 'light'));
       };
-
+      
       initTheme();
-
-      themeToggle?.addEventListener("click", () => {
-        const current = root.getAttribute("data-theme");
-        const next = current === "dark" ? "light" : "dark";
+      
+      themeToggle?.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
         applyTheme(next);
         setStoredTheme(next);
       });
 
-      // Year
-      const yearEl = document.getElementById("year");
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
+      // Active nav link
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.section');
+      
+      const updateActiveNav = () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const mainContent = document.querySelector('.main-content');
+          if (mainContent.scrollTop >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      };
+      
+      document.querySelector('.main-content')?.addEventListener('scroll', updateActiveNav);
+
+      // Mobile menu
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+      
+      mobileToggle?.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        mobileToggle.classList.toggle('active');
+      });
+
+      // Close sidebar when clicking a link on mobile
+      document.querySelectorAll('.sidebar a, .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 1024) {
+            sidebar.classList.remove('open');
+            mobileToggle.classList.remove('active');
+          }
+        });
+      });
+
+      // Smooth scroll for nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href');
+          const target = document.querySelector(targetId);
+          const mainContent = document.querySelector('.main-content');
+          
+          if (target && mainContent) {
+            mainContent.scrollTo({
+              top: target.offsetTop - 40,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
 
       // Scroll animations
       const animateOnScroll = () => {
-        const elements = document.querySelectorAll(
-          ".hero-grid > *, .project-card, .experience-card, .tool-card, .achievement-card"
-        );
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry, index) => {
-              if (entry.isIntersecting) {
-                entry.target.style.transitionDelay = `${index * 0.05}s`;
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-
-        elements.forEach((el) => observer.observe(el));
+        const elements = document.querySelectorAll('.stat-card, .visual-card, .project-card, .experience-card, .tool-card, .achievement-card');
+        const mainContent = document.querySelector('.main-content');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('visible');
+              }, index * 50);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { 
+          root: mainContent,
+          threshold: 0.1 
+        });
+        
+        elements.forEach(el => observer.observe(el));
       };
-
+      
       animateOnScroll();
-
-      // Scroll to top
-      const scrollBtn = document.querySelector(".scroll-top");
-      window.addEventListener("scroll", () => {
-        scrollBtn.classList.toggle("show", window.scrollY > 400);
-      });
-      scrollBtn?.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
     </script>
   </body>
 </html>
