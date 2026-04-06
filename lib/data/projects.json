@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ai-data-brain",
+    "title": "AI Data Brain",
+    "slug": "ai-data-brain",
+    "tagline": "Voice-native intelligence for collaborative tables",
+    "description": "Built a multilingual workspace powered by Claude MCP for direct LLM-to-database reasoning with sub-100ms realtime sync.",
+    "fullDescription": "Detailed description here...",
+    "category": "AI-ML",
+    "techStack": ["Next.js", "Claude MCP", "MongoDB", "WebSockets"],
+    "difficulty": 5,
+    "keyInnovation": "Sub-100ms Realtime Sync",
+    "metrics": {
+      "users": "500+",
+      "performance": "100ms latency",
+      "impact": "10x faster than traditional solutions"
+    },
+    "featured": true,
+    "status": "shipped",
+    "demoUrl": "https://github.com/MehediHasan-75/ai_data_brain",
+    "githubUrl": "https://github.com/MehediHasan-75/ai_data_brain",
+    "videoUrl": "",
+    "images": ["/assets/projects/ai-data-brain/hero.png"],
+    "createdAt": "2025-01-15"
+  },
+  {
+    "id": "wordpress-agent",
+    "title": "WordPress Agent",
+    "slug": "wordpress-agent",
+    "tagline": "Autonomous copilot for engineering agencies",
+    "description": "AI assistant automating WordPress workflows with RAG search and MCP tools.",
+    "category": "AI-ML",
+    "techStack": ["Python", "FastAPI", "RAG", "Claude API"],
+    "difficulty": 4,
+    "keyInnovation": "RAG Implementation",
+    "featured": true,
+    "status": "in-progress",
+    "demoUrl": "",
+    "githubUrl": "",
+    "images": [],
+    "createdAt": "2025-02-01"
+  }
+]

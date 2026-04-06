@@ -1,0 +1,24 @@
+[
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend",
+    "proficiency": 90,
+    "usageFrequency": 95,
+    "icon": "nextjs",
+    "color": "#000000",
+    "yearsOfExperience": 2,
+    "projectCount": 15
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "proficiency": 85,
+    "usageFrequency": 80,
+    "icon": "python",
+    "color": "#3776AB",
+    "yearsOfExperience": 3,
+    "projectCount": 20
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "codeforces": {
+    "username": "bonu_malitha",
+    "rating": 1200,
+    "rank": "Pupil",
+    "maxRating": 1250,
+    "solvedProblems": 350,
+    "profileUrl": "https://codeforces.com/profile/bonu_malitha",
+    "ratingHistory": [
+      { "date": "2024-01", "rating": 1100 },
+      { "date": "2024-06", "rating": 1200 },
+      { "date": "2025-01", "rating": 1250 }
+    ]
+  },
+  "codechef": {
+    "username": "nuhupaikumbar",
+    "rating": 1650,
+    "stars": 3,
+    "solvedProblems": 200,
+    "profileUrl": "https://www.codechef.com/users/nuhupaikumbar"
+  }
+}

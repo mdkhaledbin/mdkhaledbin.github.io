@@ -1,0 +1,37 @@
+[
+  {
+    "id": "recurse-ai",
+    "company": "Recurse AI",
+    "role": "Software Engineer Intern",
+    "location": "Remote",
+    "type": "Internship",
+    "startDate": "2025-02",
+    "endDate": "2025-07",
+    "current": true,
+    "description": "Delivered AI-first products end-to-end including autonomous WordPress agents and ML-backed audio tooling.",
+    "achievements": [
+      "Built shipping pipelines pairing MCP agents with human QA gates",
+      "Developed production pipeline isolating vocals via Invert AI API with resilient queuing"
+    ],
+    "techStack": ["Next.js", "Python", "FastAPI", "Claude API", "Docker"],
+    "companyUrl": "https://www.linkedin.com/in/md-khaled-bin-814a4b225/",
+    "companyLogo": "/assets/companies/recurse-ai.png"
+  },
+  {
+    "id": "remotask",
+    "company": "Remotask",
+    "role": "AI Model Trainer",
+    "location": "Remote",
+    "type": "Contract",
+    "startDate": "2023-06",
+    "endDate": "2023-09",
+    "current": false,
+    "description": "Curated coding and competitive programming datasets to uplift LLM reasoning.",
+    "achievements": [
+      "Designed annotation templates that reduced rejection rates"
+    ],
+    "techStack": ["Python", "Data Annotation"],
+    "companyUrl": "https://www.linkedin.com/in/md-khaled-bin-814a4b225/",
+    "companyLogo": "/assets/companies/remotask.png"
+  }
+]
