@@ -3,35 +3,73 @@
     "id": "recurse-ai",
     "company": "Recurse AI",
     "role": "Software Engineer Intern",
-    "location": "Remote",
+    "location": "Sylhet, Bangladesh",
     "type": "Internship",
     "startDate": "2025-02",
     "endDate": "2025-07",
-    "current": true,
-    "description": "Delivered AI-first products end-to-end including autonomous WordPress agents and ML-backed audio tooling.",
+    "current": false,
+    "description": "Engineered full-stack and AI-integrated products across web and workflow automation systems.",
     "achievements": [
-      "Built shipping pipelines pairing MCP agents with human QA gates",
-      "Developed production pipeline isolating vocals via Invert AI API with resilient queuing"
+      "Built 3 production-ready full-stack applications using React.js, Next.js, and Django REST Framework",
+      "Architected a WordPress AI assistant with RAG over 100,000+ docs used by 40+ engineers",
+      "Reduced troubleshooting time by 60% through context-aware retrieval and assistant tooling",
+      "Developed an ML-based audio workflow app and containerized delivery with Docker"
     ],
-    "techStack": ["Next.js", "Python", "FastAPI", "Claude API", "Docker"],
-    "companyUrl": "https://www.linkedin.com/in/md-khaled-bin-814a4b225/",
+    "techStack": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Django REST Framework",
+      "RAG",
+      "MCP",
+      "Docker"
+    ],
+    "companyUrl": "",
     "companyLogo": "/assets/companies/recurse-ai.png"
   },
   {
     "id": "remotask",
     "company": "Remotask",
-    "role": "AI Model Trainer",
+    "role": "AI Model Trainer — Data Annotation",
     "location": "Remote",
     "type": "Contract",
     "startDate": "2023-06",
-    "endDate": "2023-09",
+    "endDate": "2023-12",
     "current": false,
-    "description": "Curated coding and competitive programming datasets to uplift LLM reasoning.",
+    "description": "Contributed high-quality code annotation and evaluation datasets for LLM training pipelines.",
     "achievements": [
-      "Designed annotation templates that reduced rejection rates"
+      "Annotated 5,000+ code samples in Python, C++, and JavaScript",
+      "Focused on competitive-programming style tasks (Codeforces 1200–2000 range)",
+      "Improved quality benchmarks through correctness and efficiency-focused evaluations"
     ],
-    "techStack": ["Python", "Data Annotation"],
-    "companyUrl": "https://www.linkedin.com/in/md-khaled-bin-814a4b225/",
+    "techStack": [
+      "Python",
+      "C++",
+      "JavaScript",
+      "Data Annotation",
+      "LLM Evaluation"
+    ],
+    "companyUrl": "",
     "companyLogo": "/assets/companies/remotask.png"
+  },
+  {
+    "id": "sust-cse",
+    "company": "Shahjalal University of Science & Technology",
+    "role": "B.Sc. in Computer Science and Engineering",
+    "location": "Sylhet, Bangladesh",
+    "type": "Education",
+    "startDate": "2021-01",
+    "endDate": "2026-04",
+    "current": false,
+    "description": "Completed undergraduate study in CSE with a strong base in algorithms, systems, and software engineering.",
+    "achievements": ["Graduated in Apr 2026", "CGPA: 3.70 / 4.00"],
+    "techStack": [
+      "Data Structures",
+      "Algorithms",
+      "Databases",
+      "Software Engineering"
+    ],
+    "companyUrl": "https://www.sust.edu/",
+    "companyLogo": ""
   }
 ]

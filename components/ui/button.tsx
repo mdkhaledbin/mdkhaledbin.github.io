@@ -1,3 +1,5 @@
+"use client";
+
 import type {
   ButtonHTMLAttributes,
   AnchorHTMLAttributes,
@@ -5,6 +7,7 @@ import type {
 } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { motion, HTMLMotionProps } from "framer-motion";
 
 type ButtonVariant = "default" | "outline" | "secondary" | "ghost" | "link";
 type ButtonSize = "sm" | "default" | "lg" | "icon";
@@ -27,12 +30,15 @@ const sizeClasses: Record<ButtonSize, string> = {
   icon: "h-10 w-10",
 };
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends Omit<HTMLMotionProps<"button">, "variant" | "size"> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   asChild?: boolean;
   href?: string;
 }
+
+// Support for framer-motion 12+ create API
+const MotionLink = (motion as any).create ? (motion as any).create(Link) : (motion as any)(Link);
 
 export function Button({
   className,
@@ -49,17 +55,13 @@ export function Button({
   );
 
   if (asChild && "href" in props) {
-    const { href, children, ...anchorProps } =
-      props as AnchorHTMLAttributes<HTMLAnchorElement> & {
-        href: string;
-        children?: ReactNode;
-      };
+    const { href, children, ...anchorProps } = props as any;
     return (
-      <Link href={href} className={classes} {...anchorProps}>
+      <MotionLink href={href} className={classes} {...anchorProps}>
         {children}
-      </Link>
+      </MotionLink>
     );
   }
 
-  return <button className={classes} {...props} />;
+  return <motion.button className={classes} {...props} />;
 }

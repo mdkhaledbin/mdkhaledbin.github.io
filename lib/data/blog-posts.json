@@ -1,22 +1,32 @@
 [
   {
-    "slug": "building-rag-systems-with-claude-mcp",
-    "title": "Building RAG Systems with Claude MCP",
-    "excerpt": "A deep dive into implementing Retrieval-Augmented Generation using Claude's Model Context Protocol for smarter AI agents.",
-    "publishedAt": "2025-01-15",
-    "readTime": 8,
-    "tags": ["AI", "RAG", "Claude", "MCP"],
+    "slug": "ai-data-brain-case-study",
+    "title": "AI Data Brain: Building Voice-Native Data Workflows",
+    "excerpt": "How I used MCP integrations, realtime updates, and full-stack architecture to reduce manual entry by 80% and accelerate query workflows.",
+    "publishedAt": "2026-04-01",
+    "readTime": 7,
+    "tags": ["AI", "MCP", "Next.js", "Django", "PostgreSQL"],
     "featured": true,
-    "views": 1240
+    "views": 0
   },
   {
-    "slug": "scaling-nextjs-for-10k-users",
-    "title": "Scaling Next.js for 10K+ Concurrent Users",
-    "excerpt": "Lessons learned from optimizing a Next.js application to handle massive traffic without breaking the bank.",
-    "publishedAt": "2024-12-20",
+    "slug": "wordpress-rag-assistant-notes",
+    "title": "Shipping a WordPress RAG Assistant for Engineering Teams",
+    "excerpt": "Engineering notes from building a context-aware assistant over 100,000+ documents with RAG and MCP-connected workflows.",
+    "publishedAt": "2026-03-10",
     "readTime": 6,
-    "tags": ["Next.js", "Performance", "Scaling"],
+    "tags": ["RAG", "Vector DB", "MCP", "Django"],
     "featured": false,
-    "views": 850
+    "views": 0
+  },
+  {
+    "slug": "focus-dictionary-architecture",
+    "title": "Focus Dictionary: Offline-First Extension Architecture",
+    "excerpt": "Design decisions behind a privacy-first Chrome extension with local dictionary caching and API fallback.",
+    "publishedAt": "2026-04-05",
+    "readTime": 5,
+    "tags": ["TypeScript", "Chrome Extension", "IndexedDB", "React"],
+    "featured": false,
+    "views": 0
   }
 ]

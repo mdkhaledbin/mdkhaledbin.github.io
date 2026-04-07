@@ -3,22 +3,72 @@
     "id": "nextjs",
     "name": "Next.js",
     "category": "Frontend",
-    "proficiency": 90,
-    "usageFrequency": 95,
-    "icon": "nextjs",
-    "color": "#000000",
-    "yearsOfExperience": 2,
-    "projectCount": 15
+    "icon": "Triangle"
   },
   {
-    "id": "python",
-    "name": "Python",
-    "category": "Language",
-    "proficiency": 85,
-    "usageFrequency": 80,
-    "icon": "python",
-    "color": "#3776AB",
-    "yearsOfExperience": 3,
-    "projectCount": 20
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "icon": "Atom"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Frontend",
+    "icon": "FileCode2"
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "icon": "Palette"
+  },
+  {
+    "id": "django",
+    "name": "Django REST",
+    "category": "Backend",
+    "icon": "Blocks"
+  },
+  {
+    "id": "fastapi",
+    "name": "FastAPI",
+    "category": "Backend",
+    "icon": "Zap"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "icon": "Box"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "icon": "Database"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "icon": "Leaf"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "Tools",
+    "icon": "Container"
+  },
+  {
+    "id": "rag",
+    "name": "RAG Systems",
+    "category": "Tools",
+    "icon": "BrainCircuit"
+  },
+  {
+    "id": "github",
+    "name": "GitHub Actions",
+    "category": "Tools",
+    "icon": "Github"
   }
 ]

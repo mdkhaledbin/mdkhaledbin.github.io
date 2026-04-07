@@ -1,22 +1,22 @@
 {
   "codeforces": {
     "username": "bonu_malitha",
-    "rating": 1200,
+    "rating": 1298,
     "rank": "Pupil",
-    "maxRating": 1250,
-    "solvedProblems": 350,
+    "maxRating": 1298,
+    "solvedProblems": 218,
     "profileUrl": "https://codeforces.com/profile/bonu_malitha",
     "ratingHistory": [
-      { "date": "2024-01", "rating": 1100 },
-      { "date": "2024-06", "rating": 1200 },
-      { "date": "2025-01", "rating": 1250 }
+      { "date": "2022-01", "rating": 1000 },
+      { "date": "2022-12", "rating": 1200 },
+      { "date": "2026-04", "rating": 1298 }
     ]
   },
   "codechef": {
     "username": "nuhupaikumbar",
-    "rating": 1650,
+    "rating": 1612,
     "stars": 3,
-    "solvedProblems": 200,
+    "solvedProblems": 77,
     "profileUrl": "https://www.codechef.com/users/nuhupaikumbar"
   }
 }
