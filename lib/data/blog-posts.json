@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "building-rag-systems-with-claude-mcp",
+    "title": "Building RAG Systems with Claude MCP",
+    "excerpt": "A deep dive into implementing Retrieval-Augmented Generation using Claude's Model Context Protocol for smarter AI agents.",
+    "publishedAt": "2025-01-15",
+    "readTime": 8,
+    "tags": ["AI", "RAG", "Claude", "MCP"],
+    "featured": true,
+    "views": 1240
+  },
+  {
+    "slug": "scaling-nextjs-for-10k-users",
+    "title": "Scaling Next.js for 10K+ Concurrent Users",
+    "excerpt": "Lessons learned from optimizing a Next.js application to handle massive traffic without breaking the bank.",
+    "publishedAt": "2024-12-20",
+    "readTime": 6,
+    "tags": ["Next.js", "Performance", "Scaling"],
+    "featured": false,
+    "views": 850
+  }
+]

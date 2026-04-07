@@ -1063,7 +1063,7 @@ function BentoCard({
       transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
       className={`${className}`}
     >
-      <Card className={`h-full p-6 border-neutral-200 dark:border-neutral-800 bg-gradient-to-br ${gradient} hover:shadow-lg transition-shadow cursor-pointer`}>
+      <Card className={`h-full p-6 border-neutral-200 dark:border-neutral-800 bg-linear-to-br ${gradient} hover:shadow-lg transition-shadow cursor-pointer`}>
         {children}
       </Card>
     </motion.div>
@@ -1357,7 +1357,7 @@ function ProjectCard({
       <Card className="h-full cursor-pointer border-neutral-200 dark:border-neutral-800 hover:border-primary/50 transition-all overflow-hidden group">
         {/* Project Image Placeholder */}
         {project.images && project.images[0] && (
-          <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 relative overflow-hidden">
+          <div className="aspect-video bg-linear-to-br from-primary/20 to-primary/5 relative overflow-hidden">
             <div className="absolute inset-0 bg-neutral-900/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
               <p className="text-white font-medium">View Details</p>
             </div>
@@ -2064,7 +2064,7 @@ export function CPStats() {
 
 function PlatformCard({ platform, icon: Icon, gradient, stats, color }: any) {
   return (
-    <Card className={`p-8 border-neutral-200 dark:border-neutral-800 bg-gradient-to-br ${gradient}`}>
+    <Card className={`p-8 border-neutral-200 dark:border-neutral-800 bg-linear-to-br ${gradient}`}>
       <div className="flex items-start justify-between mb-6">
         <div>
           <h3 className="text-2xl font-bold mb-1">{platform}</h3>
@@ -2841,7 +2841,7 @@ Update `app/layout.tsx`:
 <body>
   <a
     href="#main-content"
-    className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-[9999]"
+    className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-9999"
   >
     Skip to main content
   </a>

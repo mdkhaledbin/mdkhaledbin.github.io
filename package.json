@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export": "next build",
+    "deploy": "npm run export && touch out/.nojekyll && echo 'mdkhaledbin.me' > out/CNAME"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.2.2",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
     "@radix-ui/react-slot": "^1.2.4",
@@ -17,11 +22,17 @@
     "cmdk": "^1.1.1",
     "framer-motion": "^12.38.0",
     "geist": "^1.7.0",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^1.7.0",
     "next": "16.2.2",
+    "next-seo": "^7.2.0",
     "next-themes": "^0.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-highlight": "^7.0.2",
+    "rehype-slug": "^6.0.0",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
