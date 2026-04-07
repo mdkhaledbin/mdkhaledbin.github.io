@@ -27,7 +27,7 @@ export function CPStats() {
           <PlatformCard
             platform="Codeforces"
             icon={Trophy}
-            gradientClass="from-orange-500/20 to-orange-500/5"
+            gradientClass="from-primary/10 via-white to-neutral-50 dark:from-primary/15 dark:via-neutral-950 dark:to-neutral-900"
             stats={cpStats.codeforces}
             tone="orange"
           />
@@ -35,7 +35,7 @@ export function CPStats() {
           <PlatformCard
             platform="CodeChef"
             icon={Award}
-            gradientClass="from-yellow-500/20 to-yellow-500/5"
+            gradientClass="from-primary/10 via-white to-neutral-50 dark:from-primary/15 dark:via-neutral-950 dark:to-neutral-900"
             stats={cpStats.codechef}
             tone="yellow"
           />
@@ -93,13 +93,11 @@ function PlatformCard({
 
   return (
     <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
-      <Card
-        className={`border-neutral-200 bg-linear-to-br p-8 dark:border-neutral-800 ${gradientClass}`}
-      >
+      <Card className={`interactive-card bg-linear-to-br p-8 ${gradientClass}`}>
         <div className="mb-6 flex items-start justify-between">
           <div>
             <h3 className="mb-1 text-2xl font-bold">{platform}</h3>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            <p className="text-sm text-neutral-700 dark:text-neutral-400">
               @{stats.username}
             </p>
           </div>
@@ -108,21 +106,21 @@ function PlatformCard({
 
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-neutral-600 dark:text-neutral-400">
+            <span className="text-neutral-700 dark:text-neutral-400">
               Current Rating
             </span>
             <span className="text-2xl font-bold">{stats.rating}</span>
           </div>
 
           <div className="flex items-center justify-between">
-            <span className="text-neutral-600 dark:text-neutral-400">Rank</span>
+            <span className="text-neutral-700 dark:text-neutral-400">Rank</span>
             <Badge className={badgeClass}>
               {"rank" in stats ? stats.rank : `${stats.stars} Stars`}
             </Badge>
           </div>
 
           <div className="flex items-center justify-between">
-            <span className="text-neutral-600 dark:text-neutral-400">
+            <span className="text-neutral-700 dark:text-neutral-400">
               Problems Solved
             </span>
             <span className="font-bold">{stats.solvedProblems}+</span>
@@ -130,7 +128,7 @@ function PlatformCard({
 
           {"maxRating" in stats ? (
             <div className="flex items-center justify-between border-t border-neutral-200 pt-4 dark:border-neutral-800">
-              <span className="text-neutral-600 dark:text-neutral-400">
+              <span className="text-neutral-700 dark:text-neutral-400">
                 Max Rating
               </span>
               <span className="font-bold text-primary">{stats.maxRating}</span>
@@ -161,10 +159,10 @@ function StatCard({
   icon: ComponentType<{ size?: number; className?: string }>;
 }) {
   return (
-    <Card className="border-neutral-200 p-4 text-center dark:border-neutral-800">
+    <Card className="interactive-card p-4 text-center">
       <Icon className="mx-auto mb-2 text-primary" size={24} />
       <p className="mb-1 text-2xl font-bold">{value}</p>
-      <p className="text-xs text-neutral-600 dark:text-neutral-400">{label}</p>
+      <p className="text-xs text-neutral-700 dark:text-neutral-400">{label}</p>
     </Card>
   );
 }

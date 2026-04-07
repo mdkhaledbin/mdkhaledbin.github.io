@@ -13,7 +13,7 @@ import {
 const quickStats = [
   "20+ Projects Shipped",
   "600+ GitHub Contributions",
-  "3.68 CGPA SUST",
+  "3.70 CGPA SUST",
   "Sylhet, Bangladesh",
 ];
 
@@ -61,17 +61,17 @@ export function Hero() {
 
           <motion.div
             variants={fadeInUp}
-            className="flex flex-wrap items-center justify-center gap-3 text-sm font-mono text-neutral-600 dark:text-neutral-400"
+            className="flex flex-wrap items-center justify-center gap-3 text-sm font-mono text-neutral-700 dark:text-neutral-400"
           >
             {quickStats.map((stat) => (
               <span
                 key={stat}
-                className="rounded-full bg-neutral-100 px-3 py-1 dark:bg-neutral-900"
+                className="rounded-full border border-neutral-300 bg-white/90 px-3 py-1 dark:border-neutral-800 dark:bg-neutral-900"
               >
                 {stat}
               </span>
             ))}
-            <span className="flex items-center gap-2 rounded-full bg-neutral-100 px-3 py-1 dark:bg-neutral-900">
+            <span className="flex items-center gap-2 rounded-full border border-neutral-300 bg-white/90 px-3 py-1 dark:border-neutral-800 dark:bg-neutral-900">
               <MapPin size={14} />
               Sylhet, Bangladesh
             </span>
@@ -96,13 +96,13 @@ export function Hero() {
               className="group"
               {...magneticButton}
             >
-              <span>
+              <div className="flex items-center gap-2 border px-5 py-3 text-neutral-800 dark:text-neutral-400">
                 View My Work
                 <ArrowRight
-                  className="ml-2 transition-transform group-hover:translate-x-1"
+                  className="transition-transform group-hover:translate-x-1"
                   size={18}
                 />
-              </span>
+              </div>
             </Button>
             <Button
               asChild

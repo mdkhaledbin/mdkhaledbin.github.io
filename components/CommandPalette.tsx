@@ -29,8 +29,14 @@ export function CommandPalette() {
       }
     };
 
+    const openFromTrigger = () => setOpen(true);
+
     document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
+    window.addEventListener("open-command-palette", openFromTrigger);
+    return () => {
+      document.removeEventListener("keydown", down);
+      window.removeEventListener("open-command-palette", openFromTrigger);
+    };
   }, []);
 
   const navigate = (url: string) => {
@@ -52,13 +58,17 @@ export function CommandPalette() {
         open={open}
         onOpenChange={setOpen}
         label="Command Menu"
-        className="fixed left-1/2 top-[20%] z-80 w-[calc(100%-2rem)] max-w-2xl -translate-x-1/2 overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
+        aria-labelledby="command-menu-title"
+        className="fixed left-1/2 top-[20%] z-80 w-[calc(100%-2rem)] max-w-2xl -translate-x-1/2 overflow-hidden rounded-xl border border-neutral-300 bg-white shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
       >
-        <div className="flex items-center border-b border-neutral-200 px-4 dark:border-neutral-800">
-          <Search className="mr-3 text-neutral-400" size={18} />
+        <h2 id="command-menu-title" className="sr-only">
+          Command Menu
+        </h2>
+        <div className="flex items-center border-b border-neutral-300 px-4 dark:border-neutral-800">
+          <Search className="mr-3 text-neutral-500" size={18} />
           <Command.Input
             placeholder="Search projects, posts, or navigate..."
-            className="flex-1 bg-transparent py-4 text-neutral-900 outline-none placeholder:text-neutral-400 dark:text-neutral-50"
+            className="flex-1 bg-transparent py-4 text-neutral-900 outline-none placeholder:text-neutral-500 dark:text-neutral-50"
           />
         </div>
 
@@ -141,18 +151,18 @@ export function CommandPalette() {
           </Command.Group>
         </Command.List>
 
-        <div className="flex items-center justify-between border-t border-neutral-200 px-4 py-2 text-xs text-neutral-500 dark:border-neutral-800">
+        <div className="flex items-center justify-between border-t border-neutral-300 px-4 py-2 text-xs text-neutral-600 dark:border-neutral-800 dark:text-neutral-400">
           <span>Type to search...</span>
           <div className="flex items-center gap-2">
-            <kbd className="rounded bg-neutral-100 px-2 py-1 dark:bg-neutral-800">
+            <kbd className="rounded border border-neutral-200 bg-neutral-100 px-2 py-1 dark:border-neutral-700 dark:bg-neutral-800">
               ↑↓
             </kbd>
             <span>navigate</span>
-            <kbd className="rounded bg-neutral-100 px-2 py-1 dark:bg-neutral-800">
+            <kbd className="rounded border border-neutral-200 bg-neutral-100 px-2 py-1 dark:border-neutral-700 dark:bg-neutral-800">
               Enter
             </kbd>
             <span>select</span>
-            <kbd className="rounded bg-neutral-100 px-2 py-1 dark:bg-neutral-800">
+            <kbd className="rounded border border-neutral-200 bg-neutral-100 px-2 py-1 dark:border-neutral-700 dark:bg-neutral-800">
               Esc
             </kbd>
             <span>close</span>
@@ -175,9 +185,9 @@ function CommandItem({
   return (
     <Command.Item
       onSelect={onSelect}
-      className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 transition-colors data-[selected=true]:bg-neutral-100 dark:data-[selected=true]:bg-neutral-800"
+      className="flex cursor-pointer items-center gap-3 rounded-lg border border-transparent px-3 py-2 transition-colors data-[selected=true]:border-primary/30 data-[selected=true]:bg-neutral-100 dark:data-[selected=true]:bg-neutral-800"
     >
-      <Icon size={16} className="text-neutral-400" />
+      <Icon size={16} className="text-neutral-500" />
       <span className="text-sm">{children}</span>
       <ExternalLink size={14} className="ml-auto text-neutral-400" />
     </Command.Item>

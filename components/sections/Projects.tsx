@@ -83,11 +83,11 @@ export function Projects() {
                 value={searchQuery}
                 onChange={(event) => setSearchQuery(event.target.value)}
                 placeholder="Search projects, technologies, outcomes..."
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 py-2 pl-10 pr-4 text-sm outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-neutral-800 dark:bg-neutral-900"
+                className="soft-input w-full rounded-xl border py-2 pl-10 pr-4 text-sm outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
             </label>
 
-            <div className="inline-flex gap-2 rounded-xl border border-neutral-200 p-1 dark:border-neutral-800">
+            <div className="inline-flex gap-2 rounded-xl border border-neutral-300 bg-white/90 p-1 dark:border-neutral-800 dark:bg-neutral-950">
               <button
                 type="button"
                 onClick={() => setViewMode("grid")}
@@ -95,7 +95,7 @@ export function Projects() {
                 className={`rounded-lg p-2 transition-colors ${
                   viewMode === "grid"
                     ? "bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50"
-                    : "text-neutral-500"
+                    : "text-neutral-600 dark:text-neutral-400"
                 }`}
               >
                 <Grid3x3 size={18} />
@@ -107,7 +107,7 @@ export function Projects() {
                 className={`rounded-lg p-2 transition-colors ${
                   viewMode === "list"
                     ? "bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50"
-                    : "text-neutral-500"
+                    : "text-neutral-600 dark:text-neutral-400"
                 }`}
               >
                 <List size={18} />
@@ -141,7 +141,7 @@ export function Projects() {
                   className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
                     selectedTech === tech
                       ? "border-primary bg-primary/10 text-primary"
-                      : "border-neutral-200 text-neutral-600 hover:border-primary/40 hover:text-primary dark:border-neutral-800 dark:text-neutral-300"
+                      : "border-neutral-300 text-neutral-700 hover:border-primary/40 hover:text-primary dark:border-neutral-800 dark:text-neutral-300"
                   }`}
                 >
                   {tech}
@@ -184,20 +184,20 @@ export function Projects() {
           }}
         >
           {selectedProject ? (
-            <DialogContent className="max-h-[90vh] max-w-4xl overflow-y-auto">
-              <DialogHeader>
-                <DialogTitle className="text-2xl">
+            <DialogContent className="max-h-[90vh] max-w-4xl overflow-y-auto border-neutral-300 bg-white/95 shadow-[0_28px_70px_-35px_rgba(15,23,42,0.45)] dark:border-neutral-800 dark:bg-neutral-950">
+              <DialogHeader className="border-b border-neutral-200 pb-4 dark:border-neutral-800">
+                <DialogTitle className="text-2xl text-neutral-900 dark:text-neutral-100">
                   {selectedProject.title}
                 </DialogTitle>
               </DialogHeader>
 
               <div className="space-y-6">
-                <p className="text-lg font-medium text-primary">
+                <p className="rounded-xl border border-primary/20 bg-primary/8 px-4 py-3 text-base font-medium text-primary">
                   {selectedProject.tagline}
                 </p>
 
                 {selectedProject.metrics ? (
-                  <div className="grid gap-4 rounded-xl bg-neutral-100 p-4 dark:bg-neutral-900 md:grid-cols-3">
+                  <div className="grid gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900 md:grid-cols-3">
                     {selectedProject.metrics.users ? (
                       <MetricBlock
                         label="Users"
@@ -213,7 +213,7 @@ export function Projects() {
                     {selectedProject.metrics.impact ? (
                       <div className="md:col-span-3">
                         <p className="text-xs text-neutral-500">Impact</p>
-                        <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                        <p className="text-sm font-medium text-neutral-800 dark:text-neutral-300">
                           {selectedProject.metrics.impact}
                         </p>
                       </div>
@@ -221,19 +221,27 @@ export function Projects() {
                   </div>
                 ) : null}
 
-                <section>
-                  <h3 className="mb-2 font-bold">About</h3>
-                  <p className="text-neutral-600 dark:text-neutral-400">
+                <section className="rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-950/40">
+                  <h3 className="mb-2 font-bold text-neutral-900 dark:text-neutral-100">
+                    About
+                  </h3>
+                  <p className="text-neutral-700 dark:text-neutral-400">
                     {selectedProject.fullDescription ||
                       selectedProject.description}
                   </p>
                 </section>
 
                 <section>
-                  <h3 className="mb-3 font-bold">Tech Stack</h3>
+                  <h3 className="mb-3 font-bold text-neutral-900 dark:text-neutral-100">
+                    Tech Stack
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.techStack.map((tech) => (
-                      <Badge key={tech} variant="outline">
+                      <Badge
+                        key={tech}
+                        variant="outline"
+                        className="border-neutral-300 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -308,7 +316,7 @@ function ProjectCard({
       className="w-full text-left"
     >
       <Card
-        className={`group h-full overflow-hidden border-neutral-200 transition-all hover:border-primary/50 dark:border-neutral-800 ${
+        className={`interactive-card group h-full overflow-hidden ${
           viewMode === "list" ? "md:flex md:items-stretch" : ""
         }`}
       >
@@ -337,7 +345,7 @@ function ProjectCard({
             ) : null}
           </div>
 
-          <p className="line-clamp-2 text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="line-clamp-2 text-sm text-neutral-700 dark:text-neutral-400">
             {project.description}
           </p>
 

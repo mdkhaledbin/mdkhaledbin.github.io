@@ -16,7 +16,7 @@ type ExperienceItem = (typeof experienceData)[number];
 export function Experience() {
   return (
     <section
-      className="bg-neutral-50 py-20 dark:bg-neutral-900/50"
+      className="bg-neutral-50/70 py-20 dark:bg-neutral-900/50"
       id="experience"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -78,7 +78,7 @@ function ExperienceCard({
       </div>
 
       <div
-        className={`rounded-xl border border-neutral-200 bg-white p-6 transition-colors hover:border-primary/50 dark:border-neutral-800 dark:bg-neutral-900 ${
+        className={`interactive-card rounded-xl border p-6 ${
           isEven ? "md:mr-8" : "md:ml-8"
         }`}
       >
@@ -93,7 +93,7 @@ function ExperienceCard({
             </div>
             <div>
               <h3 className="text-lg font-bold">{experience.company}</h3>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
+              <p className="text-sm text-neutral-700 dark:text-neutral-400">
                 {experience.role}
               </p>
             </div>
@@ -106,7 +106,7 @@ function ExperienceCard({
           ) : null}
         </div>
 
-        <div className="mb-4 flex flex-wrap gap-4 text-sm text-neutral-600 dark:text-neutral-400">
+        <div className="mb-4 flex flex-wrap gap-4 text-sm text-neutral-700 dark:text-neutral-400">
           <div className="flex items-center gap-1">
             <Calendar size={14} />
             <span>
@@ -148,7 +148,7 @@ function ExperienceCard({
               {experience.achievements.map((achievement) => (
                 <li
                   key={achievement}
-                  className="flex items-start gap-2 text-sm text-neutral-600 dark:text-neutral-400"
+                  className="flex items-start gap-2 text-sm text-neutral-700 dark:text-neutral-400"
                 >
                   <span className="mt-1 text-primary">•</span>
                   <span>{achievement}</span>

@@ -13,8 +13,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://mdkhaledbin.me"),
   title: {
-    default: "MD Khaled Bin | Full-Stack Engineer & AI Specialist",
-    template: "%s | MD Khaled Bin",
+    default: "Md Khaled Bin | Full-Stack Engineer & AI Specialist",
+    template: "%s | Md Khaled Bin",
   },
   description:
     "Full-Stack Engineer specializing in AI systems, scalable web applications, and competitive programming. Codeforces Pupil - SUST CSE - 20+ shipped projects.",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     "Python",
     "Competitive Programming",
   ],
-  authors: [{ name: "MD Khaled Bin", url: "https://mdkhaledbin.me" }],
-  creator: "MD Khaled Bin",
+  authors: [{ name: "Md Khaled Bin", url: "https://mdkhaledbin.me" }],
+  creator: "Md Khaled Bin",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "MD Khaled Bin - Full-Stack Engineer",
+        alt: "Md Khaled Bin - Full-Stack Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MD Khaled Bin | Full-Stack Engineer",
+    title: "Md Khaled Bin | Full-Stack Engineer",
     description: "Building AI systems and scalable applications",
     creator: "@mdkhaledbin",
     images: ["/og-image.jpg"],

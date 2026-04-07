@@ -14,7 +14,10 @@ export function Blog() {
   const recentPosts = blogPosts.filter((post) => !post.featured).slice(0, 3);
 
   return (
-    <section className="bg-neutral-50 py-20 dark:bg-neutral-900/50" id="blog">
+    <section
+      className="bg-neutral-50/70 py-20 dark:bg-neutral-900/50"
+      id="blog"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 flex items-end justify-between">
           <div>
@@ -52,7 +55,7 @@ export function Blog() {
 function FeaturedPostCard({ post }: { post: Post }) {
   return (
     <Link href={`/blog/${post.slug}/`}>
-      <Card className="group h-full cursor-pointer border-neutral-200 p-8 transition-all hover:border-primary/50 dark:border-neutral-800">
+      <Card className="interactive-card group h-full cursor-pointer p-8">
         <Badge className="mb-4 border-primary/20 bg-primary/10 text-primary">
           Featured
         </Badge>
@@ -61,7 +64,7 @@ function FeaturedPostCard({ post }: { post: Post }) {
           {post.title}
         </h3>
 
-        <p className="mb-6 text-neutral-600 dark:text-neutral-400">
+        <p className="mb-6 text-neutral-700 dark:text-neutral-400">
           {post.excerpt}
         </p>
 
@@ -105,12 +108,12 @@ function PostCard({ post, index }: { post: Post; index: number }) {
       transition={{ delay: index * 0.1 }}
     >
       <Link href={`/blog/${post.slug}/`}>
-        <Card className="group cursor-pointer border-neutral-200 p-6 transition-all hover:border-primary/50 dark:border-neutral-800">
+        <Card className="interactive-card group cursor-pointer p-6">
           <h3 className="mb-2 font-bold transition-colors group-hover:text-primary">
             {post.title}
           </h3>
 
-          <p className="mb-3 line-clamp-2 text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="mb-3 line-clamp-2 text-sm text-neutral-700 dark:text-neutral-400">
             {post.excerpt}
           </p>
 
